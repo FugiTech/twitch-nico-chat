@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "NicoNico-style chat on Twitch",
+    "description": "Overlays chat onto the video similar to NicoNico",
+    "version": "1.0.0",
+    "content_scripts": [{
+        "matches": ["https://www.twitch.tv/*"],
+        "js": ["injector.js"]
+    }],
+    "web_accessible_resources": ["injected.js"]
+}
